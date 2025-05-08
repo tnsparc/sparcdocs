@@ -1,7 +1,7 @@
 ---
 title: Welcome to SPARCdocs
 ---
-![[logo.png]]
+![[logo_small.png]]
 
 
 This site will soon serve as the central hub for SPARC's documentation—operating guides, project notes, how-tos, and more. Not a whole lot here just yet, but we’re working on it. Stay tuned!
