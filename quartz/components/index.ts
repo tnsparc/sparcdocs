@@ -51,3 +51,5 @@ export {
   Flex,
   ConditionalRender,
 }
+
+export { ClubLogo } from "./ClubLogo"
