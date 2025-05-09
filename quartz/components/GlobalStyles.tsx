@@ -7,14 +7,17 @@ export default (() => {
 
   GlobalStyles.css = `
     .custombutton {
-      display: inline-block;
+      display: inline-flex;            /* Use flex to center content */
+      justify-content: center;         /* Center horizontally */
+      align-items: center;             /* Center vertically */
       padding: 10px 20px;
       margin: 5px;
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
       color: white;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.2s ease;
+      text-align: center;
     }
 
     .custombutton::after {
@@ -22,11 +25,11 @@ export default (() => {
     }
 
     .custombutton.primary {
-      background-color: #007BFF;
+      background-color: #224466;
     }
 
     .custombutton.primary:hover {
-      background-color: #0056b3;
+      background-color: #1e2c44;
     }
 
     .custombutton.secondary {

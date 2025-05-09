@@ -32,7 +32,9 @@ export default ((userOpts?: Options) => {
 
   CustomButtonComponent.css = `
     .custombutton {
-      display: inline-block;
+      display: inline-flex;            /* Use flex to center content */
+      justify-content: center;         /* Center horizontally */
+      align-items: center;             /* Center vertically */
       padding: 10px 20px;
       margin: 5px;
       text-decoration: none;
@@ -40,6 +42,7 @@ export default ((userOpts?: Options) => {
       font-weight: bold;
       color: white;
       transition: background-color 0.3s ease;
+      text-align: center;
     }
 
     .custombutton.primary {
