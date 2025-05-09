@@ -1,5 +1,5 @@
 ---
-title: Welcome to SPARCdocs
+title: Society for Progress Amateur Radio Club
 ---
 This site will soon serve as the central hub for SPARC's documentation—operating guides, project notes, how-tos, and more. Not a whole lot here just yet, but we’re working on it. Stay tuned!
 
