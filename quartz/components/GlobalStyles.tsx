@@ -1,36 +1,11 @@
 import { QuartzComponentConstructor } from "./types"
 
-interface Options {
-  text: string
-  href: string
-  newTab?: boolean
-  variant?: "primary" | "secondary" | "danger"
-}
-
-const defaultOptions: Options = {
-  text: "Click Me",
-  href: "#",
-  newTab: true,
-  variant: "primary",
-}
-
-export default ((userOpts?: Options) => {
-  const opts = { ...defaultOptions, ...userOpts }
-
-  function CustomButtonComponent() {
-    return (
-      <a
-        href={opts.href}
-        class={`custombutton ${opts.variant}`}
-        target={opts.newTab ? "_blank" : "_self"}
-        rel={opts.newTab ? "noopener noreferrer" : undefined}
-      >
-        {opts.text}
-      </a>
-    )
+export default (() => {
+  function GlobalStyles() {
+    return null // No visible output, just injects CSS
   }
 
-  CustomButtonComponent.css = `
+  GlobalStyles.css = `
     .custombutton {
       display: inline-block;
       padding: 10px 20px;
@@ -40,6 +15,10 @@ export default ((userOpts?: Options) => {
       font-weight: bold;
       color: white;
       transition: background-color 0.3s ease;
+    }
+
+    .custombutton::after {
+      content: none !important;
     }
 
     .custombutton.primary {
@@ -65,7 +44,7 @@ export default ((userOpts?: Options) => {
     .custombutton.danger:hover {
       background-color: #a71d2a;
     }
-    
+
     .custombutton::after {
       content: none !important;
     }
@@ -75,5 +54,5 @@ export default ((userOpts?: Options) => {
     }
   `
 
-  return CustomButtonComponent
+  return GlobalStyles
 }) satisfies QuartzComponentConstructor
