@@ -1,4 +1,3 @@
-import { h } from "preact"
 import { QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 export const ClubLogo: QuartzComponentConstructor = (_opts) => {
