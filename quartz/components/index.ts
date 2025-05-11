@@ -49,7 +49,9 @@ export {
   Breadcrumbs,
   Comments,
   Flex,
-  ConditionalRender,
+  ConditionalRender
 }
 
 export { ClubLogo } from "./ClubLogo"
+export { default as CustomButton } from "./CustomButton"
+export { default as GlobalStyles } from "./GlobalStyles"
