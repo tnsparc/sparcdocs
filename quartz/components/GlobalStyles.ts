@@ -44,6 +44,37 @@ export default (() => {
     .custombutton.danger:hover { background-color: #a71d2a; }
     .custombutton .external-icon { display: none !important; }
 
+    .calendar-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 75%; /* 4:3 Aspect Ratio or adjust as needed */
+      height: 0;
+      overflow: hidden;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .calendar-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    @media (min-width: 601px) {
+      .calendar-container {
+        width: 80%; /* Or a fixed pixel value like 800px */
+        padding-bottom: 0; /* Remove aspect ratio enforcement */
+        height: 600px; /* Set explicit height for desktop */
+      }
+
+      .calendar-container iframe {
+        height: 100%;
+      }
+    }
+
     @media (max-width: 600px) {
       .custombutton {
         width: auto;           /* Instead of 100% */
@@ -57,7 +88,11 @@ export default (() => {
     }
 
 
+
+
+
   `
+
 
   return GlobalStyles
 }) satisfies QuartzComponentConstructor

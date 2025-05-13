@@ -26,11 +26,11 @@ export const defaultContentPageLayout: PageLayout = {
   left: [
     Component.ClubLogo(),
     Component.MobileOnly(Component.Spacer()),
-    Component.Search,
+    Component.Search(),
     Component.Flex({
       components: [
-        { Component: Component.Darkmode },
-        { Component: Component.ReaderMode },
+        { Component: Component.Darkmode() },
+        { Component: Component.ReaderMode() },
       ],
       direction: "row",
       gap: "0.5rem",
@@ -53,11 +53,11 @@ export const defaultListPageLayout: PageLayout = {
   left: [
     Component.ClubLogo(),
     Component.MobileOnly(Component.Spacer()),
-    Component.Search,
+    Component.Search(),
     Component.Flex({
       components: [
-        { Component: Component.Darkmode },
-        { Component: Component.ReaderMode },
+        { Component: Component.Darkmode() },
+        { Component: Component.ReaderMode() },
       ],
       direction: "row",
       gap: "0.5rem",
