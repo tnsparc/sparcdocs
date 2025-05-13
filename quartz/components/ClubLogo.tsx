@@ -7,6 +7,7 @@ export const ClubLogo: QuartzComponentConstructor = (_opts) => {
         <img
           src="/logo.png"
           alt="Club Logo"
+          class="club-logo" // ✅ Add this class for CSS control
           style={{ maxWidth: "100%", maxHeight: "250px" }}
         />
       </div>
