@@ -1,10 +1,9 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
-// ✅ Shared layout components
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [],
+  header: [],  // Leave header empty to allow default hamburger behavior
   afterBody: [Component.GlobalStyles()],
   footer: Component.Footer({
     links: {
@@ -14,7 +13,6 @@ export const sharedPageComponents: SharedLayout = {
   }),
 }
 
-// ✅ Layout for content pages
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.ConditionalRender({
@@ -27,19 +25,17 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   left: [
     Component.ClubLogo(),
-    //Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
+    Component.Search,
     Component.Flex({
       components: [
-        {
-          Component: Component.Search(),
-          grow: true,
-        },
-        { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
+        { Component: Component.Darkmode },
+        { Component: Component.ReaderMode },
       ],
+      direction: "row",
+      gap: "0.5rem",
     }),
-    Component.Explorer(),
+    Component.Explorer(),  // This activates the hamburger automatically
   ],
   right: [
     Component.Graph(),
@@ -48,7 +44,6 @@ export const defaultContentPageLayout: PageLayout = {
   ],
 }
 
-// ✅ Layout for list pages (tags/folders)
 export const defaultListPageLayout: PageLayout = {
   beforeBody: [
     Component.Breadcrumbs(),
@@ -57,16 +52,15 @@ export const defaultListPageLayout: PageLayout = {
   ],
   left: [
     Component.ClubLogo(),
-    //Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
+    Component.Search,
     Component.Flex({
       components: [
-        {
-          Component: Component.Search(),
-          grow: true,
-        },
-        { Component: Component.Darkmode() },
+        { Component: Component.Darkmode },
+        { Component: Component.ReaderMode },
       ],
+      direction: "row",
+      gap: "0.5rem",
     }),
     Component.Explorer(),
   ],
