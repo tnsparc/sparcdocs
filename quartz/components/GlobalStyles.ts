@@ -6,16 +6,16 @@ export default (() => {
   }
 
   GlobalStyles.css = `
-button.mobile-explorer {
-  position: fixed;
-  top: 1rem;
-  left: 1rem;
-  z-index: 1100; /* Even higher than the explorer */
-}
-
-.explorer {
-  z-index: 1000; /* Explorer remains below the hamburger */
-}
+    button.mobile-explorer {
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      z-index: 1100; /* Even higher than the explorer */
+    }
+    
+    .explorer {
+      z-index: 1000; /* Explorer remains below the hamburger */
+    }
 
 
     .custombutton {
@@ -44,7 +44,18 @@ button.mobile-explorer {
     .custombutton.danger:hover { background-color: #a71d2a; }
     .custombutton .external-icon { display: none !important; }
 
-    
+    @media (max-width: 600px) {
+      .custombutton {
+        width: auto;           /* Instead of 100% */
+        max-width: 90%;        /* Optional: control maximum width */
+        box-sizing: border-box;
+        font-size: 1.1rem;
+        padding: 12px;
+        margin: 1rem auto;
+        white-space: normal;
+      }
+    }
+
 
   `
 
