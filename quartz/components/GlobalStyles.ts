@@ -17,7 +17,6 @@ export default (() => {
       z-index: 1000; /* Explorer remains below the hamburger */
     }
 
-
     .custombutton {
       display: inline-flex;
       justify-content: center;
@@ -75,24 +74,63 @@ export default (() => {
       }
     }
 
-    @media (max-width: 600px) {
-      .custombutton {
-        width: auto;           /* Instead of 100% */
-        max-width: 90%;        /* Optional: control maximum width */
-        box-sizing: border-box;
-        font-size: 1.1rem;
-        padding: 12px;
-        margin: 1rem auto;
-        white-space: normal;
-      }
+    .club-logo {
+      width: 100%;
+      text-align: center;
+      margin: 0 auto 0.5rem auto; /* Top:0, Right:auto, Bottom:0.5rem, Left:auto */
     }
 
+    .club-logo img {
+      max-width: 160px;
+      height: auto;
+      display: inline-block; /* Needed when centering img inside text-align:center */
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center content inside */
+      text-align: center;
+      width: 100%; /* Take full sidebar width */
+    }
+
+    .left.sidebar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* Align the container to the left */
+    }
+
+.search-space, .search {
+  display: flex;
+  justify-content: center;
+  width: 180px; /* Match logo width */
+  margin: 0 auto;
+}
+
+.search-bar {
+  width: 100% !important;
+  max-width: 200px !important;
+  min-width: 160px !important;
+  display: block !important;
+  margin: 0 auto !important;
+  box-sizing: border-box !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
 
 
-
-
+  @media (max-width: 600px) {
+    .custombutton {
+      width: auto;           /* Instead of 100% */
+      max-width: 90%;        /* Optional: control maximum width */
+      box-sizing: border-box;
+      font-size: 1.1rem;
+      padding: 12px;
+      margin: 1rem auto;
+      white-space: normal;
+    }
+  }
   `
-
 
   return GlobalStyles
 }) satisfies QuartzComponentConstructor
