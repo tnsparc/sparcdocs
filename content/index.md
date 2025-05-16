@@ -58,49 +58,47 @@ SPARC meets monthly on the third Thursday of each month at 6:00 PM CST.
   </iframe>
 </div>
 
-<div id="mc_embed_signup">
-    <form action="https://tnsparc.us2.list-manage.com/subscribe/post?u=a88f02b13fe9fc99eb7f21bfb&amp;id=78b9fd9316&amp;f_id=006cabe0f0" 
-          method="post" 
-          id="mc-embedded-subscribe-form" 
-          name="mc-embedded-subscribe-form" 
-          class="validate" 
-          target="_blank" 
-          novalidate>
-      <div id="mc_embed_signup_scroll">
-        <h3>SIGN-UP FOR OUR NEWSLETTER</h3>
-        <div class="mc-field-group">
-          <label for="mce-EMAIL"><b>Email:</b></label>
-          <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required aria-required="true">
-          <input type="submit" name="subscribe" id="mc-embedded-subscribe" value="Subscribe">
-        </div>
-        <div id="mce-responses" class="clear foot">
-          <div class="response" id="mce-error-response" style="display: none;"></div>
-          <div class="response" id="mce-success-response" style="display: none;"></div>
-        </div>
-        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-          <input type="text" name="b_a88f02b13fe9fc99eb7f21bfb_78b9fd9316" tabindex="-1" value="">
-        </div>
+<div id="mc_embed_signup" style="display: flex; justify-content: center; align-items: center; width: 100%; margin: 2rem 0;">
+  <form 
+    action="https://tnsparc.us2.list-manage.com/subscribe/post?u=a88f02b13fe9fc99eb7f21bfb&amp;id=78b9fd9316&amp;f_id=006cabe0f0" 
+    method="post" 
+    id="mc-embedded-subscribe-form" 
+    name="mc-embedded-subscribe-form" 
+    class="validate" 
+    target="_blank" 
+    novalidate
+    style="max-width: 500px; width: 100%; text-align: center;">
+    <div id="mc_embed_signup_scroll">
+      <h3>SIGN-UP FOR OUR NEWSLETTER</h3>
+      <div class="mc-field-group" style="display: flex; flex-direction: column; gap: 1rem; align-items: center;">
+        <label for="mce-EMAIL"><b>Email:</b></label>
+        <input 
+          type="email" 
+          name="EMAIL" 
+          class="required email" 
+          id="mce-EMAIL" 
+          required 
+          aria-required="true" 
+          style="padding: 0.5rem; width: 100%; max-width: 300px; box-sizing: border-box;">
+        <input 
+          type="submit" 
+          name="subscribe" 
+          id="mc-embedded-subscribe" 
+          value="Subscribe" 
+          style="padding: 0.5rem 1rem; border-radius: 5px; background-color: #224466; color: white; border: none; cursor: pointer;">
       </div>
-    </form>
-  </div>
-
-  <!-- Removed the external Mailchimp CSS link entirely -->
-  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-  <script type="text/javascript">
-    (function($) {
-      window.fnames = new Array(); 
-      window.ftypes = new Array();
-      fnames[0]='EMAIL'; ftypes[0]='email';
-      fnames[1]='FNAME'; ftypes[1]='text';
-      fnames[2]='LNAME'; ftypes[2]='text';
-      fnames[3]='ADDRESS'; ftypes[3]='address';
-      fnames[4]='PHONE'; ftypes[4]='phone';
-      fnames[5]='BIRTHDAY'; ftypes[5]='birthday';
-      fnames[6]='COMPANY'; ftypes[6]='text';
-    }(jQuery));
-    var $mcj = jQuery.noConflict(true);
-  </script>
+      <div id="mce-responses" class="clear foot">
+        <div class="response" id="mce-error-response" style="display: none;"></div>
+        <div class="response" id="mce-success-response" style="display: none;"></div>
+      </div>
+      <div style="position: absolute; left: -5000px;" aria-hidden="true">
+        <input type="text" name="b_a88f02b13fe9fc99eb7f21bfb_78b9fd9316" tabindex="-1" value="">
+      </div>
+    </div>
+  </form>
 </div>
+
+
 
 
 
