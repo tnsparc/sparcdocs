@@ -13,7 +13,7 @@ We recommend **arcOS**, a Linux distribution purpose-built for amateur radio, as
     Built for HF, VHF, and UHF digital modes, including APRS, packet radio, and VARA FM/HF.
     
 - **Portable and Flexible**  
-    Runs well on laptops, Raspberry Pis, and low-power devices — great for home stations, mobile rigs, and go-kits.
+    Runs well on laptops and low-power devices — great for home stations, mobile rigs, and go-kits.
     
 - **Minimal Setup**  
     Skip the install headaches. arcOS comes ready to connect to your radio, control it via CAT or audio interface, and start operating.
