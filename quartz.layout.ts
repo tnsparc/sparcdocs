@@ -7,8 +7,8 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [Component.GlobalStyles()],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      //GitHub: "https://github.com/jackyzha0/quartz",
+      //"Discord Community": "https://discord.gg/cRFFHYye7t",
     },
   }),
 }
@@ -24,26 +24,26 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
   ],
   left: [
-  Component.Flex({
-    components: [
-      { Component: Component.ClubLogo() },
-      { Component: Component.Search() },
-      {
-        Component: Component.Flex({
-          components: [
-            { Component: Component.Darkmode() },
-            { Component: Component.ReaderMode() },
-          ],
-          direction: "row",
-          gap: "0.5rem",
-        }),
-      },
-    ],
-    direction: "column",
-    gap: "1rem",
-  }),
-  Component.Explorer(),
-],
+    Component.Flex({
+      components: [
+        { Component: Component.ClubLogo() },
+        { Component: Component.Search() },
+        {
+          Component: Component.Flex({
+            components: [
+              { Component: Component.Darkmode() },
+              { Component: Component.ReaderMode() },
+            ],
+            direction: "row",
+            gap: "0.5rem",
+          }),
+        },
+      ],
+      direction: "column",
+      gap: "1.0rem",
+    }),
+    Component.Explorer(),
+  ],
 
   right: [
     Component.Graph(),
@@ -59,15 +59,23 @@ export const defaultListPageLayout: PageLayout = {
     Component.ContentMeta(),
   ],
   left: [
-    Component.ClubLogo(),
-    Component.MobileOnly(Component.Spacer()),
-    Component.Search(),
     Component.Flex({
       components: [
-        { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
+        { Component: Component.ClubLogo() },
+        //{ Component: Component.MobileOnly(Component.Spacer()) },
+        { Component: Component.Search() },
+        { 
+          Component: Component.Flex({
+            components: [
+              { Component: Component.Darkmode() },
+              { Component: Component.ReaderMode() },
+            ],
+            direction: "row",
+            gap: "0.5rem",
+          }),
+        },
       ],
-      direction: "row",
+      direction: "column",
       gap: "1.0rem",
     }),
     Component.Explorer(),
